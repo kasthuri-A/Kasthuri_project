@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.dashboard {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #666;
+}
+
+.form-box {
+  width: 600px;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.form-box label {
+  display: block;
+  margin-bottom: 7px;
+  font-weight: bold;
+}
+
+.form-box input[type="text"],
+.form-box select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+.skill input {
+  margin-right: 8px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 13px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background: #1d4ed8;
+}
