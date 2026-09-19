@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#FFF5F5;
+    color:#333;
+}
+
+
+/* Navbar */
+
+.navbar{
+    background:#DC143C;
+    color:white;
+
+    padding:18px 6%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.navbar h2{
+    font-size:25px;
+}
+
+.nav-links{
+    display:flex;
+    gap:18px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.nav-links a:hover{
+    color:#FFCDD2;
+}
+
+
+/* Blood Section */
+
+.blood-section{
+    padding:45px 8%;
+}
+
+.blood-section h1{
+    text-align:center;
+
+    color:#B71C1C;
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+    text-shadow:2px 2px 5px rgba(0,0,0,0.3);
+}
+
+.description{
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:40px;
+}
+
+
+/* Blood Cards */
+
+.blood-container{
+    display:grid;
+
+    grid-template-columns:
+    repeat(4, 1fr);
+
+    gap:25px;
+}
+
+.blood-card{
+    background:white;
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,0.15);
+
+    transition:0.3s;
+}
+
+.blood-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 7px 18px rgba(0,0,0,0.2);
+}
+
+
+/* Blood Circle */
+
+.blood-circle{
+    width:100px;
+
+    height:100px;
+
+    margin:0 auto 20px;
+
+    background:#DC143C;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:25px;
+
+    font-weight:bold;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.blood-card h2{
+    color:#B71C1C;
+
+    margin-bottom:12px;
+
+    font-size:21px;
+}
+
+.blood-card p{
+    color:#666;
+
+    line-height:1.5;
+
+    font-size:14px;
+}
+
+
+/* Information Section */
+
+.info-section{
+    max-width:900px;
+
+    margin:20px auto 50px;
+
+    padding:30px;
+
+    background:#FFCDD2;
+
+    border-radius:10px;
+
+    text-align:center;
+}
+
+.info-section h2{
+    color:#B71C1C;
+
+    margin-bottom:15px;
+}
+
+.info-section p{
+    color:#555;
+
+    line-height:1.6;
+}
+
+
+/* Footer */
+
+footer{
+    background:#B71C1C;
+
+    color:white;
+
+    text-align:center;
+
+    padding:18px;
+}
+
+
+/* Responsive */
+
+@media(max-width:1000px){
+
+    .blood-container{
+        grid-template-columns:
+        repeat(2, 1fr);
+    }
+
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+
+        justify-content:center;
+    }
+
+    .blood-section{
+        padding:30px 5%;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .blood-container{
+        grid-template-columns:1fr;
+    }
+
+}
